@@ -1,5 +1,7 @@
 /**
+ *
 *main - prints the size of various types
+*
 *Return: always return 0 (success)
 */
 int main(void)
