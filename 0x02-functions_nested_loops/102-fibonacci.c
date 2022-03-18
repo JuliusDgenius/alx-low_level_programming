@@ -17,7 +17,7 @@ for (i = 0; i < 50; ++i)
 temp = num1 + num2;
 if (i < 49)
 {
-printf("%lu,", temp);
+printf("%lu, ", temp);
 }
 else
 {
