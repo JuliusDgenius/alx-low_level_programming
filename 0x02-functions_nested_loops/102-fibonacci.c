@@ -8,22 +8,24 @@
  */
 int main(void)
 {
-long int i, j, k, next;
-j = 1;
-k = 2;
-for (i = 1; i <= 50; ++i)
+int i;
+unsigned long num1, num2, temp;
+num1 = 0;
+num2 = 1;
+for (i = 0; i < 50; ++i)
 {
-if (j != 20365011074)
+temp = num1 + num2;
+if (i < 49)
 {
-printf("%ld,", j);
+printf("%lu,", temp);
 }
 else
 {
-printf("%ld\n", j);
+printf("%lu", temp);
 }
-next = j + k;
-j = k;
-k = next;
+num1 = num2;
+num2 = temp;
 }
+printf("\n");
 return (0);
 }
