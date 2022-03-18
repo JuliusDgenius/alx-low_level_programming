@@ -9,7 +9,7 @@
  * overflow to the top part.
  * Return: Describes the return value.
  */
-/int main(void)
+int main(void)
 {
 unsigned long int i, j, k, j1, j2, k1, k2;
 j = 1;
@@ -33,5 +33,4 @@ j1 = k1 - j1;
 k2 = k2 + j2;
 j2 = k2 - j2;
 }printf("\n");
-return (0);
-}
+eturn (0);
