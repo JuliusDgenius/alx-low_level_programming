@@ -12,13 +12,13 @@
 int main(void)
 {
 int i, flag;
-unsigned long num1, num2, t, rem, fb_num2, sp_num2, fp_num1, sp_num1, t1, t2;
+unsigned long num1, num2, t, rem, fp_num2, sp_num2, fp_num1, sp_num1, t1, t2;
 num1 = 0;
 num2 = 1;
 flag = 0;
 for (i = 0; i < 98; i++)
 {
-if (num < 1000000000000000000)
+if (num2 < 1000000000000000000)
 {
 t = num1 + num2;
 printf("%lu, ", t);
@@ -40,13 +40,13 @@ rem = t2 / 10000000000;
 t1 += rem;
 t2 %= 10000000000;
 if (i < 97)
-printf("%lu%0101u, ", t1, t2);
+printf("%lu%010lu, ", t1, t2);
 fp_num1 = fp_num2;
 sp_num1 = sp_num2;
 fp_num2 = t1;
 sp_num2 = t2;
 }
 }
-printf("%lu\n", t1, t2);
+printf("%lu%lu\n", t1, t2);
 return (0);
 }
