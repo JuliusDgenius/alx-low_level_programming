@@ -5,9 +5,9 @@
  * @s: string location pointer
  * Return: string length
  */
-_strlen(char *s)
+int _strlen(char *s)
 {
-char c = 0;
+int c = 0;
 while (*(s + c) != '\0')
 c++;
 return (c);
