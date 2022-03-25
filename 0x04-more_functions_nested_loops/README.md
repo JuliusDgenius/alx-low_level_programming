@@ -7,7 +7,7 @@ This project explains:
 
 * what is a prototype.
 
-* scope of variables
+* scope of variables.
 
 * what are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89.
 
