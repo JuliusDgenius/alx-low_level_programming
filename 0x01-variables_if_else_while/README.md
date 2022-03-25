@@ -1,4 +1,4 @@
-This project is about variables, if, else, while.
+This project is about variables, if/else, and while statements.
 
 Task 0 - A program that assigns a random number to the variable n.
 
