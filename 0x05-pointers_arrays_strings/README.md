@@ -9,3 +9,5 @@ This project will teach:
 * How to use strings and how to manipulate them.
 
 * Scope of variables.
+
+To understand the concepts at the end of the projects.
