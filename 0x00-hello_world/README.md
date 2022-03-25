@@ -1,4 +1,4 @@
-This directory contains C Task files 
+This directory contains C Task files: 
 
 Task 0 - Is a script that runs a C file through the preprocessor and save the result into another file 
 
