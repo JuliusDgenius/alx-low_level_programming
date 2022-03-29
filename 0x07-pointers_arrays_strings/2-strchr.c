@@ -1,20 +1,25 @@
 #include "main.h"
 
 /**
- * _memcpy - irontnoux2
- * @dest: pointer to char params
- * @src: pointer to char params
- * @n: size
- * Return: *dest
- */
+ * _strchr - prints found c
+ * @s: pointer to char
+ * @c: char params to found
+ * Return: *S
+*/
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
+	while (*s != '\0')
 	{
-		dest[i] = src[i];
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	return (dest);
+	if (*s == c)
+	{
+		return (s);
+	}
+return (0);
 }
