@@ -13,3 +13,5 @@ This repository contains my first C programs as alx student, cohort-5.
 * The 0x05-pointers_arrays_strings - teaches about pointers, arrays and strings.
 
 * The 0x06-pointers_arrays_strings - more on pointers, arrays and strings.
+
+* The 0x07-pointers_arrays_strings - more on pointers, arrays and strings.
