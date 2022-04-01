@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 
-void _puts_recursive(char *string)
+void _puts_recursion(char *string)
 {
 	if (*string == '\0')
 	{
