@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 /**
- * main - adds positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 onsuccess, 1 on failing
+ * main - adds positive numbers.
+ * @argc: number arguments.
+ * @argv: array of arguments.
+ * Return: 0 if okay, 1 if error
  */
+
 int main(int argc, char *argv[])
 {
 	int i, j, add = 0;
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 		}
 		add += atoi(argv[i]);
 	}
-	printf("%d/n", add);
+	printf("%d\n", add);
 	return (0);
 }
