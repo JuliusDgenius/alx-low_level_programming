@@ -1,2 +1,2 @@
 #!/bin/bash
-ar libmy.a
+ar libmy.a *.c
