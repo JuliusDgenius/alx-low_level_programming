@@ -99,11 +99,11 @@ str[i] = '\0';
 }
 
 /**
- * main - multiply two numbers
- * @argc: number of arguments
- * @argv: argument vector
+ * main - multiply two numbers.
+ * @argc: number of arguments.
+ * @argv: argument vector.
  *
- * Return: zero, or exit status of 98 if failure
+ * Return: zero, or exit status of 98 if failure.
  */
 int main(int argc, char *argv[])
 {
