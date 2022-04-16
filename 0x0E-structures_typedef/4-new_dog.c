@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-
 /**
  * new_dog - creates a new struct of type dog
  * @name: struct parameter name
@@ -14,8 +13,10 @@ int nlen, olen, i;
 dog_t *doggy;
 
 nlen = olen = 0;
-while (name[nlen++]);
-while (owner[olen++]);
+while (name[nlen++])
+;
+while (owner[olen++])
+;
 doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 return (NULL);
