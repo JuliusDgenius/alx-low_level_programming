@@ -15,7 +15,7 @@ list_t *current;
 list_t *new_node;
 int c;
 
-current = **head;
+current = *head;
 while (current && current->next != NULL)
 	current = current->next;
 
@@ -23,6 +23,12 @@ for (c = 0; str[c] = != '\0'; c++)
 	;
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
+{
+free(new_node);
+return (NULL);
+}
+new_node->str = strdup(str);
+if (new_node->str == NULL)
 {
 free(new_node);
 return (NULL);
