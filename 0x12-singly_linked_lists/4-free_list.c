@@ -14,9 +14,9 @@ current = head;
 
 while (current != NULL)
 {
-nxt = current->next;
+next = current->next;
 free(current->str);
 free(current);
-current = nxt;
+current = next;
 }
 }
