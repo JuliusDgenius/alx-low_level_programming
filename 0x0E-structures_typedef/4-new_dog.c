@@ -22,7 +22,7 @@ doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 return (NULL);
 
-doggy->name = malloc(nlen * sizeof(doggy->name));
+doggy->name = malloc(nlen *sizeof(doggy->name));
 if (doggy == NULL)
 return (NULL);
 for (i = 0; i < nlen; i++)
