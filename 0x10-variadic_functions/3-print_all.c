@@ -41,7 +41,7 @@ printf("%d", va_arg(i, int));
 
 /**
  * print_f - prints a float
- * @f: float to point
+ * @f: float to print
  *
  * Return: void
  */
