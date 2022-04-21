@@ -10,12 +10,15 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t i;
+	size_t nbr_nodes = 0;
+	const list_t *current = h;
 
-for (i = 0; h; i++)
-{
-printf("[%d] %s\n", h->len, h->str);
-h = h->next;
-}
-return (i);
+	while (current != NULL)
+	{
+		printf("[%d] %s\n", current->len,
+		current->str != NULL ? current->str : "(nil)");
+		current = current->next;
+		nbr_nodes++;
+	}
+	return (nbr_nodes);
 }
