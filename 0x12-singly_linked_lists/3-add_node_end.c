@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * add_node_end - adds a node at the end of a linked list
@@ -19,7 +20,7 @@ current = *head;
 while (current && current->next != NULL)
 	current = current->next;
 
-for (c = 0; str[c] = != '\0'; c++)
+for (c = 0; str[c] != '\0'; c++)
 	;
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
