@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - run before main
+ * premain - run before main
  */
-void __attribute__ ((constructor)) main()
+void __attribute__ ((constructor)) premain()
 {
 printf("You're beat! and yet, you must allow,\nI boremy house uponmy back!\n");
 }
