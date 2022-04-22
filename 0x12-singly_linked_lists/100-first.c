@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * premain - run before main
+ * main - run before main
  */
 void __attribute__ ((constructor)) main()
 {
