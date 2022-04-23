@@ -21,3 +21,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_alphabet_x10(void);
 int print_sign(int n);
+int print_last_digit(int);
