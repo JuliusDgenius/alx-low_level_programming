@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *  * main - print out 98 fib numbers starting with 1, 2
- *   *
- *    * Description: Not allowed to use type long long so
- *     * had to cut both numbers in 2 after certain point then had to account
- *      * for when the bottom part of number would overflow to the top part.
- *       * Return: Description of the returned value
- *        */
+* main - print out 98 fib numbers starting with 1, 2
+*
+* Description: Not allowed to use type long long so
+* had to cut both numbers in 2 after certain point then had to account
+* for when the bottom part of number would overflow to the top part.
+* Return: Description of the returned value
+*/
 int main(void)
 {
 	int i, flag;
