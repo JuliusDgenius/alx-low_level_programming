@@ -19,3 +19,5 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+void print_alphabet_x10(void);
+int print_sign(int n);
