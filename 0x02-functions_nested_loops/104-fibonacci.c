@@ -1,52 +1,52 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
- * main - prints out 98 fibonacci numbers starting with 1, 2
- *
- * Description: Use of long long is not allowed, so had to cut both numbers in
- * two after a certain point and account for when bottom part of num would
- * overflow to the top part.
- * Return: Describes the return value.
- */
+ *  * main - print out 98 fib numbers starting with 1, 2
+ *   *
+ *    * Description: Not allowed to use type long long so
+ *     * had to cut both numbers in 2 after certain point then had to account
+ *      * for when the bottom part of number would overflow to the top part.
+ *       * Return: Description of the returned value
+ *        */
 int main(void)
 {
-int i, flag;
-unsigned long num1, num2, t, rem, fp_num2, sp_num2, fp_num1, sp_num1, t1, t2;
-num1 = 0;
-num2 = 1;
-flag = 0;
-for (i = 0; i < 91; i++)
-{
-if (num2 < 1000000000000000000)
-{
-t = num1 + num2;
-printf("%lu, ", t);
-num1 = num2;
-num2 = t;
-}
-else
-{
-if (flag++ == 0)
-{
-fp_num2 = num2 / 1000000000;
-sp_num2 = num2 % 1000000000;
-fp_num1 = num1 / 1000000000;
-fp_num1 = num1 % 1000000000;
-}
-t1 = fp_num1 + fp_num2;
-t2 = sp_num1 + sp_num2;
-rem = t2 / 10000000000;
-t1 += rem;
-t2 %= 10000000000;
-if (i < 99)
-printf("%lu%010lu, ", t1, t2);
-fp_num1 = fp_num2;
-sp_num1 = sp_num2;
-fp_num2 = t1;
-sp_num2 = t2;
-}
-}
-printf("%lu%lu\n", t1, t2);
-return (0);
+	int i, flag;
+	unsigned long n1, n2, t, rem, fp_n2, sp_n2, fp_n1, sp_n1, t1, t2;
+
+	n1 = 0;
+	n2 = 1;
+	flag = 0;
+	for (i = 0; i < 98; ++i)
+	{
+		if (n2 < 1000000000000000000)
+		{
+			t =  n1 + n2;
+			printf("%lu, ", t);
+			n1 = n2;
+			n2 = t;
+		}
+		else
+		{
+			if (flag++ == 0)
+			{
+				fp_n2 = n2 / 10000000000;
+				sp_n2 = n2 % 10000000000;
+				fp_n1 = n1 / 10000000000;
+				sp_n1 = n1 % 10000000000;
+			}
+			t1 = fp_n1 + fp_n2;
+			t2 = sp_n1 + sp_n2;
+			rem = t2 / 10000000000;
+			t1 += rem;
+			t2 %= 10000000000;
+			if (i < 97)
+				printf("%lu%010lu, ", t1, t2);
+			fp_n1 = fp_n2;
+			sp_n1 = sp_n2;
+			fp_n2 = t1;
+			sp_n2 = t2;
+		}
+	}
+	printf("%lu%lu\n", t1, t2);
+	return (0);
 }
