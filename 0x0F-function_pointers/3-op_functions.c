@@ -2,8 +2,8 @@
 
 /**
  * op_add - addition function
- * @x: first int input
- * @y: second int input
+ * @a: first int input
+ * @b: second int input
  * Return: sum of x and y
  */
 int op_add(int a, int b)
@@ -24,8 +24,8 @@ return (a - b);
 
 /**
  * op_mul - calculates the products of two numbers
- * @x: first number
- * @y: second number
+ * @a: first number
+ * @b: second number
  * Return: product of two numbers
  */
 int op_mul(int a, int b)
@@ -35,8 +35,8 @@ return (a * b);
 
 /**
  * op_div - divides two numbers
- * @x: first num
- * @y: second num
+ * @a: first num
+ * @b: second num
  * Return: returns division of two nums
  */
 int op_div(int a, int b)
@@ -46,8 +46,8 @@ return (a / b);
 
 /**
  * op_mod - get remainder of the division of 2 nums
- * @x: first num
- * @y: second num
+ * @a: first num
+ * @b: second num
  * Return: remainder
  */
 int op_mod(int a, int b)
