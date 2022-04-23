@@ -31,19 +31,19 @@ printf("\n");
  */
 int main(int argc, char **argv)
 {
-int n;
+	int n;
 
-if (argc != 2)
-{
-printf("Error\n");
-exit(1);
-}
-n = atoi(argv[1]);
-if (n < 0)
-{
-printf("Error\n");
-exit(2);
-}
-print_opcodes((char *)&main, n);
-return (0);
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	n = atoi(argv[1]);
+	if (n < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	print_opcodes((char *)&main, n);
+	return (0);
 }
