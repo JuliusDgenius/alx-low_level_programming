@@ -6,9 +6,9 @@
  * @y: second int input
  * Return: sum of x and y
  */
-int op_add(int x, int y)
+int op_add(int a, int b)
 {
-return (x + y);
+return (a + b);
 }
 
 /**
@@ -28,9 +28,9 @@ return (a - b);
  * @y: second number
  * Return: product of two numbers
  */
-int op_mul(int x, int y)
+int op_mul(int a, int b)
 {
-return (x * y);
+return (a * b);
 }
 
 /**
@@ -39,9 +39,9 @@ return (x * y);
  * @y: second num
  * Return: returns division of two nums
  */
-int op_div(int x, int y)
+int op_div(int a, int b)
 {
-return (x / y);
+return (a / b);
 }
 
 /**
@@ -50,7 +50,7 @@ return (x / y);
  * @y: second num
  * Return: remainder
  */
-int op_mod(int x, int y)
+int op_mod(int a, int b)
 {
-return (x % y);
+return (a % b);
 }
