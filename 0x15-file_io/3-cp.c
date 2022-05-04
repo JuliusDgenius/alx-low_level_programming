@@ -25,7 +25,7 @@ exit(97);
  * @check: checks if true or false
  * @file: file_from name
  * @fd_from: file descriptor of file_from, or -1
- * @fs_to: file descriptor of file_to, or -1
+ * @fd_to: file descriptor of file_to, or -1
  *
  * Return: void
  */
@@ -66,7 +66,7 @@ exit(99);
 
 /**
  * check100 - checks that file descriptors were closed properly
- * @chec: checks if true or false
+ * @check: checks if true or false
  * @fd: file descriptor
  *
  * Return: void
