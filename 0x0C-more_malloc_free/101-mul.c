@@ -123,7 +123,7 @@ for (l1 = 0; argv[1][l1]; l1++)
 for (l2 = 0; argv[2][l2]; l2++)
 ;
 ln = l1 + l2 + 1;
-a = malloc(ln * sizeof(char));
+a = malloc(ln *sizeof(char));
 if (a == NULL)
 {
 for (ti = 0; e[ti]; ti++)
@@ -140,7 +140,7 @@ for (ti = 0; e[ti]; ti++)
 _putchar(e[ti]);
 free(a);
 																					exit(98);
-																					}
+}
 }
 	_print(a, ln - 1);
 	return (0);
