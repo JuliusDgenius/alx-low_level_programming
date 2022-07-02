@@ -5,7 +5,7 @@
  * @ht: A pointer to the hash table to print.
  *
  * Description: Key/value pairs are printed in the order
- * 		they appear in the array of the hash table.
+ * they appear in the array of the hash table.
  */
 void hash_table_print(const hash_table_t *ht)
 {
@@ -27,7 +27,8 @@ void hash_table_print(const hash_table_t *ht)
 			node = ht->array[i];
 			while (node != NULL)
 			{
-				printf("'%s': '%s'", node->key, node->value);				     node = node->next;
+				printf("'%s': '%s'", node->key, node->value);
+				node = node->next;
 				if (node != NULL)
 					printf(", ");
 			}
