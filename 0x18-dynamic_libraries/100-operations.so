@@ -1,3 +1,0 @@
-#!/usr/bin/python3
-gcc *.c -c -fPIC
-gcc -shared -o -lib100-operations.so *.o
