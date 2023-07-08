@@ -8,15 +8,15 @@
  *
  * Return: number of bits needed to be flipped to get to another
  */
-unsigned long int flip_bits(unsigned long int num1, unsigned long int num2)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int xORValue = num1 ^ num2;
+	unsigned long int x = n ^ m;
 	unsigned int counter = 0;
 
-	while (xORValue > 0)
+	while (x > 0)
 	{
 		counter++;
-		xORValue &= (xORValue - 1);
+		x &= (x - 1);
 	}
 	return (counter);
 }
