@@ -9,20 +9,20 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    unsigned int i = 0;
-    dlistint_t *node = head;
+unsigned int i = 0;
+dlistint_t *node = head;
 
-    while ((i != index) && (node != NULL))
-    {
-        node = node->next;
-        i++;
-    }
-    if (i == index)
-    {
-        return (node);
-    }
-    else
-    {
-        return (NULL);
-    }
+while ((i != index) && (node != NULL))
+{
+node = node->next;
+i++;
+}
+if (i == index)
+{
+return (node);
+}
+else
+{
+return (NULL);
+}
 }
