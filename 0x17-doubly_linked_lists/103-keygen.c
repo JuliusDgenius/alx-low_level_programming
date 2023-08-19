@@ -35,6 +35,7 @@ key[4] = tb[f5(username, uname_len)];
 key[5] = tb[f6(username, uname_len)];
 printf("%s\n", key);
 }
+}
 else
 {
 printf("Usage: %s username\n", argv[0]);
