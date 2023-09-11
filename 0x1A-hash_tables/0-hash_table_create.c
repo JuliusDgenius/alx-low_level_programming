@@ -32,12 +32,18 @@ unsigned long int i;
 
 hash_table_t *hash_table = (hash_table_t *) malloc(sizeof(hash_table_t));
 if (hash_table == NULL)
-return (NULL);
+{
+printf("malloc failed\n");
+exit(EXIT_FAILURE);
+}
 hash_table->size = size;
-hash_table->array = (hash_table->array **) calloc(hash_table->size,
+hash_table->array = calloc(hash_table->size,
         sizeof(hash_node_t*));
 if (hash_table->array == NULL)
-    return (NULL);
+{
+printf("calloc failed\n");
+exit(EXIT_FAILURE);
+}
 for (i = 0; i < hash_table->size; i++)
 hash_table->array[i] = NULL;
 
