@@ -5,7 +5,7 @@
  *
  * @key: string passed to hash function
  * @value: Value corresponding to key
- * @next: A pointer to the next node of the list
+ * Return: Pointer to hash node
  */
 hash_node_t *create_hash_node(char *key, char *value)
 {
