@@ -9,13 +9,13 @@
  */
 hash_node_t *create_hash_node(char *key, char *value)
 {
-    hash_node_t *hash_node = malloc(sizeof(hash_node_t));
-    hash_node->key = malloc(sizeof(strlen(key)) + 1);
-    hash_node->value = malloc(sizeof(strlen(value) + 1));
-    strcpy(hash_node->key, key);
-    strcpy(hash_node->value, value);
+hash_node_t *hash_node = malloc(sizeof(hash_node_t));
+hash_node->key = malloc(sizeof(strlen(key)) + 1);
+hash_node->value = malloc(sizeof(strlen(value) + 1));
+strcpy(hash_node->key, key);
+strcpy(hash_node->value, value);
 
-    return (hash_node);
+return (hash_node);
 }
 
 /**
@@ -28,14 +28,16 @@ hash_node_t *create_hash_node(char *key, char *value)
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    unsigned long int i;
+unsigned long int i;
 
-    hash_table_t *hash_table = (hash_table_t*) malloc(sizeof(hash_table_t));
-    hash_table->size = size;
-    hash_table->array = calloc(hash_table->size, sizeof(hash_node_t));
+hash_table_t *hash_table = (hash_table_t *) malloc(sizeof(hash_table_t));
+if (hash_table == NULL)
+return (NULL);
+hash_table->size = size;
+hash_table->array = calloc(hash_table->size, sizeof(hash_node_t));
 
-    for (i = 0; i < hash_table->size; i++)
-        hash_table->array[i] = NULL;
+for (i = 0; i < hash_table->size; i++)
+hash_table->array[i] = NULL;
 
-    return (hash_table);
+return (hash_table);
 }
