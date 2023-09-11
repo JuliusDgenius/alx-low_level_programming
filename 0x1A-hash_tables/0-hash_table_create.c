@@ -10,8 +10,23 @@
 hash_node_t *create_hash_node(char *key, char *value)
 {
 hash_node_t *hash_node = malloc(sizeof(hash_node_t));
+if (hash_node == NULL)
+{
+printf("malloc failed\n");
+exit(EXIT_FAILURE);
+}
 hash_node->key = malloc(sizeof(strlen(key)) + 1);
+if (hash_node->key == NULL)
+{
+printf("malloc failed\n");
+exit(EXIT_FAILURE);
+}
 hash_node->value = malloc(sizeof(strlen(value) + 1));
+if (hash_node->value == NULL)
+{
+printf("malloc failed\n");
+exit(EXIT_FAILURE);
+}
 strcpy(hash_node->key, key);
 strcpy(hash_node->value, value);
 
