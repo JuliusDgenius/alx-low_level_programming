@@ -1,17 +1,12 @@
 # Make file rule for compiling c files
-CC=gcc
-CFLAGS= -Wall
 
 all: school
 
 school: main.o school.o
-	$(CC) $(CFLAGS) main.o school.o -o school
+	gcc -Wall main.o school.o -o school
 
 main.o: main.c
-	$(CC) $(CFLAGS) -c main.c
+	gcc -c -Wall main.c
 
 school.o: school.c
-	$(CC) $(CFLAGS) -c school.c
-
-clean:
-	rm -f *.o school
+	gcc -c -Wall school.c
