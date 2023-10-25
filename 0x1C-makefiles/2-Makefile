@@ -1,0 +1,16 @@
+# Use variables to hold source and object files.
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME=school
+
+all: $(NAME)
+
+school: $(OBJ)
+	$(CC)  $(SRC) -o $(NAME)
+
+%.o: %.c m.h
+	$(CC) -c $<
+
+clean:
+	rm -f $(OBJ) $(NAME)
