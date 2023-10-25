@@ -14,4 +14,4 @@ school: $(OBJECTS)
 	$(CC) -c -Wall $<
 
 clean:
-	rm *.o school
+	rm -f *.o school
