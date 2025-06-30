@@ -12,8 +12,8 @@ unsigned long int i;
 hash_node_t *node;
 short int comma = 0;
 
-if (ht == NUUL)
-    return;
+if (ht == NULL)
+return;
 
 putchar('{');
 for (i = 0; i < ht->size; i++)
@@ -23,7 +23,7 @@ while (node != NULL)
 {
 if (comma)
 printf(", ");
-printf("'%s'", node->key, node->value);
+printf("'%s': '%s'", node->key, node->value);
 node = node->next;
 if (comma == 0)
 comma = 1;
